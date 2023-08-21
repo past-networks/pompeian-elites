@@ -1,5 +1,4 @@
-# Meaningful title for the repository
-*pick type of repository (TOOL, ETL, ANALYSIS, ADMIN)*
+# Networks of Pompeian elites based on inscriptions
 
 ---
 
@@ -8,10 +7,9 @@
 
 ---
 ## Authors
-* Petra Hermankova [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-6349-0540), SDAM project, petra@ancientsocialcomplexity.org
-* [Name], [ORCID], [Institution], [email]
-* [Name], [ORCID], [Institution], [email]
-* [Name], [ORCID], [Institution], [email]
+* Petra Hermankova [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-6349-0540) @petrifiedvoices
+* [Name], [ORCID], [Institution], [contact]
+* [Name], [ORCID], [Institution], [contact]
 
 ## License
 CC-BY-SA 4.0, see attached License.md
@@ -34,15 +32,6 @@ Anything else on data metadata and data used. Link to data repository or explana
 ### Software
 1. Software X, minimum version 123
 1. Software Y, version 456
-
-### Registered account
-1. CompanyA
-1. CompanyB
-
-### Hardware
-1. Multiple-screen
-1. Mouse
-1. Coffee
 
 ---
 ## Installation
