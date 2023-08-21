@@ -1,11 +1,8 @@
 # Networks of Pompeian elites based on inscriptions
 
----
-
 ## Purpose
 The aim of this project is to reconstruct the past social networks of elites and sub-elites in Pompeii as they are preserved on Latin inscriptions. We try to replicate networks created by Broekaert (2020), using several approaches ranging from manual to semi-automated extraction of data. 
 
----
 ## Authors
 * Petra Hermankova [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-6349-0540) [@petrifiedvoices](https://github.com/petrifiedvoices)
 * [Name], [ORCID], [Institution], [contact]
