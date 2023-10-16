@@ -1,0 +1,50 @@
+---
+title: "Pompeian elites on inscriptions"
+author:
+- Petra Hermankova^[Aarhus University, petra.hermankova@cas.au.dk, https://orcid.org/0000-0002-6349-0540]
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    theme: united
+    toc: yes
+    toc_float: true
+    number_sections: true
+    toc_depth: 2
+    df_print: paged
+editor: visual
+---
+
+# Setup and data extraction
+
+## Environment setup
+
+```{r setup, echo=TRUE, message=FALSE}
+library(tidyverse)
+library(jsonlite)
+library(sf)
+library(googlesheets4)
+```
+
+# Data preparation
+
+##  Load the latest LIRE dataset directly from Zenodo
+
+```{r}
+LIRE<- sf::st_read("https://zenodo.org/record/8147298/files/LIRE_v2-3.geojson?download=1")
+```
+
+## Load the list of inscriptions from Googlesheet
+
+```{r}
+pompei <- read_sheet("https://docs.google.com/spreadsheets/d/1rYqIxK1hwUGYgzdZ70AyeWHrnUkX1pUYVKYv2zH4wV4/edit?usp=sharing", sheet = "IDs", trim_ws = TRUE)
+```
+
+
+## Creare a Pompeian subset of LIRE
+
+```{r}
+LIRE %>% 
+  select(EDCS.ID, inscription, clean_text_interpretive_word) %>%
+  left_join(pompei, by= c("EDCS.ID" = "EDCS_ID"))
+```
+
